@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.utdallas.edu/~pdk130030/owl/location.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.utdallas.edu/~pdk130030/owl/location.owl"
+     versionIRI="http://www.utdallas.edu/~pdk130030/owl/location.owl/1.0.0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Adj_Locations"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_08"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_14"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_08"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_14"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_01"/>
+        <Literal datatypeIRI="&xsd;string">2:75||4:140||8:118</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_01"/>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_01"/>
+        <Literal datatypeIRI="&xsd;string">Coit Rd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_01"/>
+        <Literal datatypeIRI="&xsd;integer">366</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_02"/>
+        <Literal datatypeIRI="&xsd;string">1:75||3:71</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_02"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_02"/>
+        <Literal datatypeIRI="&xsd;string">Subway</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_02"/>
+        <Literal datatypeIRI="&xsd;integer">374</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_03"/>
+        <Literal datatypeIRI="&xsd;string">2:71||4:151</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_03"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_03"/>
+        <Literal datatypeIRI="&xsd;string">Chillies</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_03"/>
+        <Literal datatypeIRI="&xsd;integer">380</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_04"/>
+        <Literal datatypeIRI="&xsd;string">1:140||5:99||3:151||6:80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_04"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_04"/>
+        <Literal datatypeIRI="&xsd;string">W Campbell Rd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_04"/>
+        <Literal datatypeIRI="&xsd;integer">253</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_05"/>
+        <Literal datatypeIRI="&xsd;string">4:99||13:211</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_05"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_05"/>
+        <Literal datatypeIRI="&xsd;string">Frankford Rd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_05"/>
+        <Literal datatypeIRI="&xsd;integer">178</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_06"/>
+        <Literal datatypeIRI="&xsd;string">4:80||7:97||12:146</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_06"/>
+        <Literal datatypeIRI="&xsd;integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_06"/>
+        <Literal datatypeIRI="&xsd;string">W Renner Rd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_06"/>
+        <Literal datatypeIRI="&xsd;integer">193</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_07"/>
+        <Literal datatypeIRI="&xsd;string">6:97||13:101||12:138</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_07"/>
+        <Literal datatypeIRI="&xsd;integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_07"/>
+        <Literal datatypeIRI="&xsd;string">McCallum Blvd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_07"/>
+        <Literal datatypeIRI="&xsd;integer">98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_08"/>
+        <Literal datatypeIRI="&xsd;string">1:118||9:111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_08"/>
+        <Literal datatypeIRI="&xsd;integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_08"/>
+        <Literal datatypeIRI="&xsd;string">Starbucks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_08"/>
+        <Literal datatypeIRI="&xsd;integer">329</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_09"/>
+        <Literal datatypeIRI="&xsd;string">8:111||10:70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_09"/>
+        <Literal datatypeIRI="&xsd;integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_09"/>
+        <Literal datatypeIRI="&xsd;string">Parker Rd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_09"/>
+        <Literal datatypeIRI="&xsd;integer">244</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_10"/>
+        <Literal datatypeIRI="&xsd;string">9:70||11:75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_10"/>
+        <Literal datatypeIRI="&xsd;integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_10"/>
+        <Literal datatypeIRI="&xsd;string">Custer Pkwy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_10"/>
+        <Literal datatypeIRI="&xsd;integer">241</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_11"/>
+        <Literal datatypeIRI="&xsd;string">10:75||12:120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_11"/>
+        <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_11"/>
+        <Literal datatypeIRI="&xsd;string">Cici&apos;s Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_11"/>
+        <Literal datatypeIRI="&xsd;integer">242</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_12"/>
+        <Literal datatypeIRI="&xsd;string">11:120||6:146||7:138</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_12"/>
+        <Literal datatypeIRI="&xsd;integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_12"/>
+        <Literal datatypeIRI="&xsd;string">Waterview Pkwy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_12"/>
+        <Literal datatypeIRI="&xsd;integer">160</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_13"/>
+        <Literal datatypeIRI="&xsd;string">7:101||14:90||5:211</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_13"/>
+        <Literal datatypeIRI="&xsd;integer">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_13"/>
+        <Literal datatypeIRI="&xsd;string">Home</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_13"/>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Adj_Locations"/>
+        <NamedIndividual IRI="#Location_14"/>
+        <Literal datatypeIRI="&xsd;string">13:90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_14"/>
+        <Literal datatypeIRI="&xsd;integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_Name"/>
+        <NamedIndividual IRI="#Location_14"/>
+        <Literal datatypeIRI="&xsd;string">Pizza Hut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hScore"/>
+        <NamedIndividual IRI="#Location_14"/>
+        <Literal datatypeIRI="&xsd;integer">77</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Adj_Locations"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location_ID"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location_Name"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hScore"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Adj_Locations"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Location_ID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Location_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hScore"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

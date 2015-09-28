@@ -1,0 +1,57 @@
+The program has multiple .java files in the project name-space that are required for proper execution of the program. 
+
+To execute the program, you need to run DineOut.java. <this is the main .java file>
+
+Tested on both windows cmd prompt & university linux servers:
+
+Step 1 : > javac  *.java
+Step 2 : > java DineOut < item-based Search Flag > < Category > < Heuristics > < Preferences >        
+
+The program takes 4 arguments -
+First Argument*  : True - if prefs have to be matched with item description and restaurant properties, False - if prefs have to matched only with restaurant properties
+Second Argument* : Veg - Vegetarian, Non-Veg - Non-Vegetarian 
+Third Argument*  : Dist - Distance[admissible heuristics], Time - Time[inadmissible heuristics]
+Fourth Argument  : Pizza||Pasta||Salad||Coffee||Music||Wi-Fi
+
+Any number of arguments less than 3 will cause the program to exit. Fourth argument is optional and all the preferences should be '||' separated.
+
+
+Example : 
+
+Expected Input  : \DineOut > java DineOut True Veg Dist Coffee
+
+Expected output : \DineOut > 
+
+itemBasedSearch : true
+Category : Veg
+Heuristics : Dist
+User Preferences : Pasta 
+
+Matched Items : 
+==============================================================================================================
+1. Italian Pasta
+	Served At : CiCi's Pizza
+	Contents  : [Pasta||Cheese||Vegetables||Tomato Sauce]
+
+==============================================================================================================
+
+
+Matched Resturants : 
+==============================================================================================================
+1. CiCi's Pizza
+	Cuisine  : [Fastfood||Pizza||Salad||Pasta||Non-Veg||Veg]
+	Ambience : [Dine-In||Family]
+
+==============================================================================================================
+
+
+Path to Resturants : 
+==============================================================================================================
+1. Path from Home to Cici's Pizza :
+	[Home, McCallum Blvd, Waterview Pkwy, Cici's Pizza]
+
+==============================================================================================================
+
+
+
+

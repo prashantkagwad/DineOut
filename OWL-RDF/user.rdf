@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY user "http://www.utdallas.edu/~pdk130030/owl/user.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.utdallas.edu/~pdk130030/owl/user.owl#"
+     xml:base="http://www.utdallas.edu/~pdk130030/owl/user.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:user="http://www.utdallas.edu/~pdk130030/owl/user.owl#">
+    <owl:Ontology rdf:about="http://www.utdallas.edu/~pdk130030/owl/user.owl">
+        <owl:versionIRI rdf:resource="http://www.utdallas.edu/~pdk130030/owl/user.owl/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Is_At -->
+
+    <owl:ObjectProperty rdf:about="&user;Is_At">
+        <rdfs:range rdf:resource="&user;Location"/>
+        <rdfs:domain rdf:resource="&user;User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Latitude -->
+
+    <owl:DatatypeProperty rdf:about="&user;Latitude">
+        <rdfs:domain rdf:resource="&user;Location"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Longitude -->
+
+    <owl:DatatypeProperty rdf:about="&user;Longitude">
+        <rdfs:domain rdf:resource="&user;Location"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Name -->
+
+    <owl:DatatypeProperty rdf:about="&user;Name">
+        <rdfs:domain rdf:resource="&user;User"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Pref -->
+
+    <owl:DatatypeProperty rdf:about="&user;Pref">
+        <rdfs:domain rdf:resource="&user;User"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Location -->
+
+    <owl:Class rdf:about="&user;Location">
+        <owl:disjointWith rdf:resource="&user;User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#User -->
+
+    <owl:Class rdf:about="&user;User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Location_Home -->
+
+    <owl:NamedIndividual rdf:about="&user;Location_Home">
+        <rdf:type rdf:resource="&user;Location"/>
+        <Longitude rdf:datatype="&xsd;double">-96.770022</Longitude>
+        <Latitude rdf:datatype="&xsd;double">32.98868</Latitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Location_University -->
+
+    <owl:NamedIndividual rdf:about="&user;Location_University">
+        <rdf:type rdf:resource="&user;Location"/>
+        <Longitude rdf:datatype="&xsd;double">-96.745968</Longitude>
+        <Latitude rdf:datatype="&xsd;double">32.98445</Latitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#Location_Work -->
+
+    <owl:NamedIndividual rdf:about="&user;Location_Work">
+        <rdf:type rdf:resource="&user;Location"/>
+        <Longitude rdf:datatype="&xsd;double">-96.801565</Longitude>
+        <Latitude rdf:datatype="&xsd;double">32.9866789</Latitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#User_Home -->
+
+    <owl:NamedIndividual rdf:about="&user;User_Home">
+        <rdf:type rdf:resource="&user;User"/>
+        <Name rdf:datatype="&xsd;string">John Doe</Name>
+        <Pref rdf:datatype="&xsd;string">Veg||Salad</Pref>
+        <Is_At rdf:resource="&user;Location_Home"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#User_Test -->
+
+    <owl:NamedIndividual rdf:about="&user;User_Test">
+        <rdf:type rdf:resource="&user;User"/>
+        <Pref rdf:datatype="&xsd;string">Any</Pref>
+        <Name rdf:datatype="&xsd;string">James Bond</Name>
+        <Is_At rdf:resource="&user;Location_University"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/user.owl#User_Work -->
+
+    <owl:NamedIndividual rdf:about="&user;User_Work">
+        <rdf:type rdf:resource="&user;User"/>
+        <Pref rdf:datatype="&xsd;string">Fish</Pref>
+        <Name rdf:datatype="&xsd;string">Matt Barns</Name>
+        <Is_At rdf:resource="&user;Location_Work"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

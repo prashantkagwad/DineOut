@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY location "http://www.utdallas.edu/~pdk130030/owl/location.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:location="http://www.utdallas.edu/~pdk130030/owl/location.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.utdallas.edu/~pdk130030/owl/location.owl">
+        <versionIRI rdf:resource="http://www.utdallas.edu/~pdk130030/owl/location.owl/1.0.0"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Adj_Locations -->
+
+    <DatatypeProperty rdf:about="&location;Adj_Locations">
+        <rdfs:domain rdf:resource="&location;Location"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_ID -->
+
+    <DatatypeProperty rdf:about="&location;Location_ID">
+        <rdfs:domain rdf:resource="&location;Location"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_Name -->
+
+    <DatatypeProperty rdf:about="&location;Location_Name">
+        <rdfs:domain rdf:resource="&location;Location"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#hScore -->
+
+    <DatatypeProperty rdf:about="&location;hScore">
+        <rdfs:domain rdf:resource="&location;Location"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location -->
+
+    <Class rdf:about="&location;Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_01 -->
+
+    <NamedIndividual rdf:about="&location;Location_01">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Location_ID rdf:datatype="&xsd;integer">1</location:Location_ID>
+        <location:Adj_Locations rdf:datatype="&xsd;string">2:75||4:140||8:118</location:Adj_Locations>
+        <location:hScore rdf:datatype="&xsd;integer">366</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">Coit Rd</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_02 -->
+
+    <NamedIndividual rdf:about="&location;Location_02">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">1:75||3:71</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">2</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">374</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">Subway</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_03 -->
+
+    <NamedIndividual rdf:about="&location;Location_03">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">2:71||4:151</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">3</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">380</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">Chillies</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_04 -->
+
+    <NamedIndividual rdf:about="&location;Location_04">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">1:140||5:99||3:151||6:80</location:Adj_Locations>
+        <location:hScore rdf:datatype="&xsd;integer">253</location:hScore>
+        <location:Location_ID rdf:datatype="&xsd;integer">4</location:Location_ID>
+        <location:Location_Name rdf:datatype="&xsd;string">W Campbell Rd</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_05 -->
+
+    <NamedIndividual rdf:about="&location;Location_05">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:hScore rdf:datatype="&xsd;integer">178</location:hScore>
+        <location:Adj_Locations rdf:datatype="&xsd;string">4:99||13:211</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">5</location:Location_ID>
+        <location:Location_Name rdf:datatype="&xsd;string">Frankford Rd</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_06 -->
+
+    <NamedIndividual rdf:about="&location;Location_06">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:hScore rdf:datatype="&xsd;integer">193</location:hScore>
+        <location:Adj_Locations rdf:datatype="&xsd;string">4:80||7:97||12:146</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">6</location:Location_ID>
+        <location:Location_Name rdf:datatype="&xsd;string">W Renner Rd</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_07 -->
+
+    <NamedIndividual rdf:about="&location;Location_07">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">6:97||13:101||12:138</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">7</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">98</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">McCallum Blvd</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_08 -->
+
+    <NamedIndividual rdf:about="&location;Location_08">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">1:118||9:111</location:Adj_Locations>
+        <location:hScore rdf:datatype="&xsd;integer">329</location:hScore>
+        <location:Location_ID rdf:datatype="&xsd;integer">8</location:Location_ID>
+        <location:Location_Name rdf:datatype="&xsd;string">Starbucks</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_09 -->
+
+    <NamedIndividual rdf:about="&location;Location_09">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:hScore rdf:datatype="&xsd;integer">244</location:hScore>
+        <location:Adj_Locations rdf:datatype="&xsd;string">8:111||10:70</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">9</location:Location_ID>
+        <location:Location_Name rdf:datatype="&xsd;string">Parker Rd</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_10 -->
+
+    <NamedIndividual rdf:about="&location;Location_10">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Location_ID rdf:datatype="&xsd;integer">10</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">241</location:hScore>
+        <location:Adj_Locations rdf:datatype="&xsd;string">9:70||11:75</location:Adj_Locations>
+        <location:Location_Name rdf:datatype="&xsd;string">Custer Pkwy</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_11 -->
+
+    <NamedIndividual rdf:about="&location;Location_11">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">10:75||12:120</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">11</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">242</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">Cici&apos;s Pizza</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_12 -->
+
+    <NamedIndividual rdf:about="&location;Location_12">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">11:120||6:146||7:138</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">12</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">160</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">Waterview Pkwy</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_13 -->
+
+    <NamedIndividual rdf:about="&location;Location_13">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:hScore rdf:datatype="&xsd;integer">0</location:hScore>
+        <location:Location_ID rdf:datatype="&xsd;integer">13</location:Location_ID>
+        <location:Adj_Locations rdf:datatype="&xsd;string">7:101||14:90||5:211</location:Adj_Locations>
+        <location:Location_Name rdf:datatype="&xsd;string">Home</location:Location_Name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/location.owl#Location_14 -->
+
+    <NamedIndividual rdf:about="&location;Location_14">
+        <rdf:type rdf:resource="&location;Location"/>
+        <location:Adj_Locations rdf:datatype="&xsd;string">13:90</location:Adj_Locations>
+        <location:Location_ID rdf:datatype="&xsd;integer">14</location:Location_ID>
+        <location:hScore rdf:datatype="&xsd;integer">77</location:hScore>
+        <location:Location_Name rdf:datatype="&xsd;string">Pizza Hut</location:Location_Name>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

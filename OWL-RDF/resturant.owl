@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.utdallas.edu/~pdk130030/owl/resturant.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.utdallas.edu/~pdk130030/owl/resturant.owl"
+     versionIRI="http://www.utdallas.edu/~pdk130030/owl/resturant.owl/1.0.0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Food_Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resturant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_At"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_Served_At"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Ambience"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Contents"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Cuisine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Item_Category"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Item_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Item_Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Item_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Location_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Resturant_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Resturant_Price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item_05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Item_06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_Chillies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_Cicispizza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_Pizzahut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_Starbucks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Location_Subway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resturant_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resturant_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resturant_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resturant_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resturant_05"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Food_Item"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Resturant"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Food_Item"/>
+        <NamedIndividual IRI="#Item_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_Item"/>
+        <NamedIndividual IRI="#Item_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_Item"/>
+        <NamedIndividual IRI="#Item_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_Item"/>
+        <NamedIndividual IRI="#Item_04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_Item"/>
+        <NamedIndividual IRI="#Item_05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Food_Item"/>
+        <NamedIndividual IRI="#Item_06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_Chillies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_Cicispizza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_Pizzahut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_Starbucks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Location_Subway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resturant"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resturant"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resturant"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resturant"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Resturant"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <NamedIndividual IRI="#Item_01"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <NamedIndividual IRI="#Item_02"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <NamedIndividual IRI="#Item_03"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <NamedIndividual IRI="#Item_04"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <NamedIndividual IRI="#Item_05"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <NamedIndividual IRI="#Item_06"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_At"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+        <NamedIndividual IRI="#Location_Subway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_At"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+        <NamedIndividual IRI="#Location_Pizzahut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_At"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+        <NamedIndividual IRI="#Location_Cicispizza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_At"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+        <NamedIndividual IRI="#Location_Starbucks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Is_At"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+        <NamedIndividual IRI="#Location_Chillies"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contents"/>
+        <NamedIndividual IRI="#Item_01"/>
+        <Literal datatypeIRI="&xsd;string">Vegetables||Dressing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Category"/>
+        <NamedIndividual IRI="#Item_01"/>
+        <Literal datatypeIRI="&xsd;string">Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Name"/>
+        <NamedIndividual IRI="#Item_01"/>
+        <Literal datatypeIRI="&xsd;string">Veggi Salad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Price"/>
+        <NamedIndividual IRI="#Item_01"/>
+        <Literal datatypeIRI="&xsd;double">6.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Type"/>
+        <NamedIndividual IRI="#Item_01"/>
+        <Literal datatypeIRI="&xsd;string">Salad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contents"/>
+        <NamedIndividual IRI="#Item_02"/>
+        <Literal datatypeIRI="&xsd;string">Meat||Cheese||Vegetables</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Category"/>
+        <NamedIndividual IRI="#Item_02"/>
+        <Literal datatypeIRI="&xsd;string">Non-Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Name"/>
+        <NamedIndividual IRI="#Item_02"/>
+        <Literal datatypeIRI="&xsd;string">Meat Lover Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Price"/>
+        <NamedIndividual IRI="#Item_02"/>
+        <Literal datatypeIRI="&xsd;double">8.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Type"/>
+        <NamedIndividual IRI="#Item_02"/>
+        <Literal datatypeIRI="&xsd;string">Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contents"/>
+        <NamedIndividual IRI="#Item_03"/>
+        <Literal datatypeIRI="&xsd;string">Pasta||Cheese||Vegetables||Tomato Sauce</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Category"/>
+        <NamedIndividual IRI="#Item_03"/>
+        <Literal datatypeIRI="&xsd;string">Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Name"/>
+        <NamedIndividual IRI="#Item_03"/>
+        <Literal datatypeIRI="&xsd;string">Italian Pasta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Price"/>
+        <NamedIndividual IRI="#Item_03"/>
+        <Literal datatypeIRI="&xsd;double">7.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Type"/>
+        <NamedIndividual IRI="#Item_03"/>
+        <Literal datatypeIRI="&xsd;string">Pasta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contents"/>
+        <NamedIndividual IRI="#Item_04"/>
+        <Literal datatypeIRI="&xsd;string">Bread||Cheese||Vegetables</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Category"/>
+        <NamedIndividual IRI="#Item_04"/>
+        <Literal datatypeIRI="&xsd;string">Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Name"/>
+        <NamedIndividual IRI="#Item_04"/>
+        <Literal datatypeIRI="&xsd;string">Cheese Burger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Price"/>
+        <NamedIndividual IRI="#Item_04"/>
+        <Literal datatypeIRI="&xsd;double">5.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Type"/>
+        <NamedIndividual IRI="#Item_04"/>
+        <Literal datatypeIRI="&xsd;string">Burger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contents"/>
+        <NamedIndividual IRI="#Item_05"/>
+        <Literal datatypeIRI="&xsd;string">Pepperoni||Cheese||Mushroom||Sausage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Category"/>
+        <NamedIndividual IRI="#Item_05"/>
+        <Literal datatypeIRI="&xsd;string">Non-Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Name"/>
+        <NamedIndividual IRI="#Item_05"/>
+        <Literal datatypeIRI="&xsd;string">Pepperoni Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Price"/>
+        <NamedIndividual IRI="#Item_05"/>
+        <Literal datatypeIRI="&xsd;double">12.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Type"/>
+        <NamedIndividual IRI="#Item_05"/>
+        <Literal datatypeIRI="&xsd;string">Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Contents"/>
+        <NamedIndividual IRI="#Item_06"/>
+        <Literal datatypeIRI="&xsd;string">Coffee||Milk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Category"/>
+        <NamedIndividual IRI="#Item_06"/>
+        <Literal datatypeIRI="&xsd;string">Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Name"/>
+        <NamedIndividual IRI="#Item_06"/>
+        <Literal datatypeIRI="&xsd;string">Caffe Moca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Price"/>
+        <NamedIndividual IRI="#Item_06"/>
+        <Literal datatypeIRI="&xsd;double">4.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Item_Type"/>
+        <NamedIndividual IRI="#Item_06"/>
+        <Literal datatypeIRI="&xsd;string">Coffee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Latitude"/>
+        <NamedIndividual IRI="#Location_Chillies"/>
+        <Literal datatypeIRI="&xsd;double">32.9804723</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_Chillies"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Longitude"/>
+        <NamedIndividual IRI="#Location_Chillies"/>
+        <Literal datatypeIRI="&xsd;double">-96.7685591</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Latitude"/>
+        <NamedIndividual IRI="#Location_Cicispizza"/>
+        <Literal datatypeIRI="&xsd;double">32.9756577</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_Cicispizza"/>
+        <Literal datatypeIRI="&xsd;integer">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Longitude"/>
+        <NamedIndividual IRI="#Location_Cicispizza"/>
+        <Literal datatypeIRI="&xsd;double">-96.7671295</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Latitude"/>
+        <NamedIndividual IRI="#Location_Pizzahut"/>
+        <Literal datatypeIRI="&xsd;double">32.9913554</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_Pizzahut"/>
+        <Literal datatypeIRI="&xsd;integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Longitude"/>
+        <NamedIndividual IRI="#Location_Pizzahut"/>
+        <Literal datatypeIRI="&xsd;double">-96.8008127</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Latitude"/>
+        <NamedIndividual IRI="#Location_Starbucks"/>
+        <Literal datatypeIRI="&xsd;double">32.9774106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_Starbucks"/>
+        <Literal datatypeIRI="&xsd;integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Longitude"/>
+        <NamedIndividual IRI="#Location_Starbucks"/>
+        <Literal datatypeIRI="&xsd;double">-96.7672314</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Latitude"/>
+        <NamedIndividual IRI="#Location_Subway"/>
+        <Literal datatypeIRI="&xsd;double">32.9804857</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Location_ID"/>
+        <NamedIndividual IRI="#Location_Subway"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Longitude"/>
+        <NamedIndividual IRI="#Location_Subway"/>
+        <Literal datatypeIRI="&xsd;double">-96.7684906</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ambience"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+        <Literal datatypeIRI="&xsd;string">Music||Dine-In||Family</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+        <Literal datatypeIRI="&xsd;string">Fastfood||Sandwich||Salad||Dessert||Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Name"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+        <Literal datatypeIRI="&xsd;string">Subway</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Price"/>
+        <NamedIndividual IRI="#Resturant_01"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ambience"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+        <Literal datatypeIRI="&xsd;string">Music||Family||Children||Dine-In</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+        <Literal datatypeIRI="&xsd;string">Fastfood||Pizza||Dessert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Name"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+        <Literal datatypeIRI="&xsd;string">Pizza Hut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Price"/>
+        <NamedIndividual IRI="#Resturant_02"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ambience"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+        <Literal datatypeIRI="&xsd;string">Dine-In||Family</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+        <Literal datatypeIRI="&xsd;string">Fastfood||Pizza||Salad||Pasta||Non-Veg||Veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Name"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+        <Literal datatypeIRI="&xsd;string">CiCi&apos;s Pizza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Price"/>
+        <NamedIndividual IRI="#Resturant_03"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ambience"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+        <Literal datatypeIRI="&xsd;string">Bachelors||Crowded||Wi-Fi||Music</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+        <Literal datatypeIRI="&xsd;string">Fastfood||Coffee||Salad||Juice||Tea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Name"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+        <Literal datatypeIRI="&xsd;string">Starbucks</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Price"/>
+        <NamedIndividual IRI="#Resturant_04"/>
+        <Literal datatypeIRI="&xsd;integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Ambience"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+        <Literal datatypeIRI="&xsd;string">Dine-In||Crowded||Music||Kid-Friendly</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cuisine"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+        <Literal datatypeIRI="&xsd;string">Dine-In||Mexican||Non-veg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Name"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+        <Literal datatypeIRI="&xsd;string">Chillies</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Resturant_Price"/>
+        <NamedIndividual IRI="#Resturant_05"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_At"/>
+        <Class IRI="#Resturant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <Class IRI="#Food_Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_At"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Is_Served_At"/>
+        <Class IRI="#Resturant"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Ambience"/>
+        <Class IRI="#Resturant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Contents"/>
+        <Class IRI="#Food_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Cuisine"/>
+        <Class IRI="#Resturant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Item_Category"/>
+        <Class IRI="#Food_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Item_Name"/>
+        <Class IRI="#Food_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Item_Price"/>
+        <Class IRI="#Food_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Item_Type"/>
+        <Class IRI="#Food_Item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Latitude"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Location_ID"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Longitude"/>
+        <Class IRI="#Location"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Resturant_Name"/>
+        <Class IRI="#Resturant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Resturant_Price"/>
+        <Class IRI="#Resturant"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Ambience"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Contents"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Cuisine"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Item_Category"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Item_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Item_Price"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Item_Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Latitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Location_ID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Longitude"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Resturant_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Resturant_Price"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

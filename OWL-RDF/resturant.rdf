@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY resturant "http://www.utdallas.edu/~pdk130030/owl/resturant.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:resturant="http://www.utdallas.edu/~pdk130030/owl/resturant.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.utdallas.edu/~pdk130030/owl/resturant.owl">
+        <versionIRI rdf:resource="http://www.utdallas.edu/~pdk130030/owl/resturant.owl/1.0.0"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Is_At -->
+
+    <ObjectProperty rdf:about="&resturant;Is_At">
+        <rdfs:range rdf:resource="&resturant;Location"/>
+        <rdfs:domain rdf:resource="&resturant;Resturant"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Is_Served_At -->
+
+    <ObjectProperty rdf:about="&resturant;Is_Served_At">
+        <rdfs:domain rdf:resource="&resturant;Food_Item"/>
+        <rdfs:range rdf:resource="&resturant;Resturant"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Ambience -->
+
+    <DatatypeProperty rdf:about="&resturant;Ambience">
+        <rdfs:domain rdf:resource="&resturant;Resturant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Contents -->
+
+    <DatatypeProperty rdf:about="&resturant;Contents">
+        <rdfs:domain rdf:resource="&resturant;Food_Item"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Cuisine -->
+
+    <DatatypeProperty rdf:about="&resturant;Cuisine">
+        <rdfs:domain rdf:resource="&resturant;Resturant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_Category -->
+
+    <DatatypeProperty rdf:about="&resturant;Item_Category">
+        <rdfs:domain rdf:resource="&resturant;Food_Item"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_Name -->
+
+    <DatatypeProperty rdf:about="&resturant;Item_Name">
+        <rdfs:domain rdf:resource="&resturant;Food_Item"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_Price -->
+
+    <DatatypeProperty rdf:about="&resturant;Item_Price">
+        <rdfs:domain rdf:resource="&resturant;Food_Item"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_Type -->
+
+    <DatatypeProperty rdf:about="&resturant;Item_Type">
+        <rdfs:domain rdf:resource="&resturant;Food_Item"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Latitude -->
+
+    <DatatypeProperty rdf:about="&resturant;Latitude">
+        <rdfs:domain rdf:resource="&resturant;Location"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location_ID -->
+
+    <DatatypeProperty rdf:about="&resturant;Location_ID">
+        <rdfs:domain rdf:resource="&resturant;Location"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Longitude -->
+
+    <DatatypeProperty rdf:about="&resturant;Longitude">
+        <rdfs:domain rdf:resource="&resturant;Location"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_Name -->
+
+    <DatatypeProperty rdf:about="&resturant;Resturant_Name">
+        <rdfs:domain rdf:resource="&resturant;Resturant"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_Price -->
+
+    <DatatypeProperty rdf:about="&resturant;Resturant_Price">
+        <rdfs:domain rdf:resource="&resturant;Resturant"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Food_Item -->
+
+    <Class rdf:about="&resturant;Food_Item"/>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location -->
+
+    <Class rdf:about="&resturant;Location"/>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant -->
+
+    <Class rdf:about="&resturant;Resturant"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_01 -->
+
+    <NamedIndividual rdf:about="&resturant;Item_01">
+        <rdf:type rdf:resource="&resturant;Food_Item"/>
+        <resturant:Item_Price rdf:datatype="&xsd;double">6.99</resturant:Item_Price>
+        <resturant:Item_Type rdf:datatype="&xsd;string">Salad</resturant:Item_Type>
+        <resturant:Item_Category rdf:datatype="&xsd;string">Veg</resturant:Item_Category>
+        <resturant:Contents rdf:datatype="&xsd;string">Vegetables||Dressing</resturant:Contents>
+        <resturant:Item_Name rdf:datatype="&xsd;string">Veggi Salad</resturant:Item_Name>
+        <resturant:Is_Served_At rdf:resource="&resturant;Resturant_01"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_02 -->
+
+    <NamedIndividual rdf:about="&resturant;Item_02">
+        <rdf:type rdf:resource="&resturant;Food_Item"/>
+        <resturant:Item_Price rdf:datatype="&xsd;double">8.99</resturant:Item_Price>
+        <resturant:Item_Name rdf:datatype="&xsd;string">Meat Lover Pizza</resturant:Item_Name>
+        <resturant:Contents rdf:datatype="&xsd;string">Meat||Cheese||Vegetables</resturant:Contents>
+        <resturant:Item_Category rdf:datatype="&xsd;string">Non-Veg</resturant:Item_Category>
+        <resturant:Item_Type rdf:datatype="&xsd;string">Pizza</resturant:Item_Type>
+        <resturant:Is_Served_At rdf:resource="&resturant;Resturant_02"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_03 -->
+
+    <NamedIndividual rdf:about="&resturant;Item_03">
+        <rdf:type rdf:resource="&resturant;Food_Item"/>
+        <resturant:Item_Price rdf:datatype="&xsd;double">7.99</resturant:Item_Price>
+        <resturant:Item_Name rdf:datatype="&xsd;string">Italian Pasta</resturant:Item_Name>
+        <resturant:Item_Type rdf:datatype="&xsd;string">Pasta</resturant:Item_Type>
+        <resturant:Contents rdf:datatype="&xsd;string">Pasta||Cheese||Vegetables||Tomato Sauce</resturant:Contents>
+        <resturant:Item_Category rdf:datatype="&xsd;string">Veg</resturant:Item_Category>
+        <resturant:Is_Served_At rdf:resource="&resturant;Resturant_03"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_04 -->
+
+    <NamedIndividual rdf:about="&resturant;Item_04">
+        <rdf:type rdf:resource="&resturant;Food_Item"/>
+        <resturant:Item_Price rdf:datatype="&xsd;double">5.75</resturant:Item_Price>
+        <resturant:Contents rdf:datatype="&xsd;string">Bread||Cheese||Vegetables</resturant:Contents>
+        <resturant:Item_Type rdf:datatype="&xsd;string">Burger</resturant:Item_Type>
+        <resturant:Item_Name rdf:datatype="&xsd;string">Cheese Burger</resturant:Item_Name>
+        <resturant:Item_Category rdf:datatype="&xsd;string">Veg</resturant:Item_Category>
+        <resturant:Is_Served_At rdf:resource="&resturant;Resturant_05"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_05 -->
+
+    <NamedIndividual rdf:about="&resturant;Item_05">
+        <rdf:type rdf:resource="&resturant;Food_Item"/>
+        <resturant:Item_Price rdf:datatype="&xsd;double">12.99</resturant:Item_Price>
+        <resturant:Item_Category rdf:datatype="&xsd;string">Non-Veg</resturant:Item_Category>
+        <resturant:Item_Name rdf:datatype="&xsd;string">Pepperoni Pizza</resturant:Item_Name>
+        <resturant:Contents rdf:datatype="&xsd;string">Pepperoni||Cheese||Mushroom||Sausage</resturant:Contents>
+        <resturant:Item_Type rdf:datatype="&xsd;string">Pizza</resturant:Item_Type>
+        <resturant:Is_Served_At rdf:resource="&resturant;Resturant_03"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Item_06 -->
+
+    <NamedIndividual rdf:about="&resturant;Item_06">
+        <rdf:type rdf:resource="&resturant;Food_Item"/>
+        <resturant:Item_Price rdf:datatype="&xsd;double">4.75</resturant:Item_Price>
+        <resturant:Item_Name rdf:datatype="&xsd;string">Caffe Moca</resturant:Item_Name>
+        <resturant:Item_Type rdf:datatype="&xsd;string">Coffee</resturant:Item_Type>
+        <resturant:Contents rdf:datatype="&xsd;string">Coffee||Milk</resturant:Contents>
+        <resturant:Item_Category rdf:datatype="&xsd;string">Veg</resturant:Item_Category>
+        <resturant:Is_Served_At rdf:resource="&resturant;Resturant_04"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location_Chillies -->
+
+    <NamedIndividual rdf:about="&resturant;Location_Chillies">
+        <rdf:type rdf:resource="&resturant;Location"/>
+        <resturant:Longitude rdf:datatype="&xsd;double">-96.7685591</resturant:Longitude>
+        <resturant:Location_ID rdf:datatype="&xsd;integer">3</resturant:Location_ID>
+        <resturant:Latitude rdf:datatype="&xsd;double">32.9804723</resturant:Latitude>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location_Cicispizza -->
+
+    <NamedIndividual rdf:about="&resturant;Location_Cicispizza">
+        <rdf:type rdf:resource="&resturant;Location"/>
+        <resturant:Longitude rdf:datatype="&xsd;double">-96.7671295</resturant:Longitude>
+        <resturant:Location_ID rdf:datatype="&xsd;integer">11</resturant:Location_ID>
+        <resturant:Latitude rdf:datatype="&xsd;double">32.9756577</resturant:Latitude>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location_Pizzahut -->
+
+    <NamedIndividual rdf:about="&resturant;Location_Pizzahut">
+        <rdf:type rdf:resource="&resturant;Location"/>
+        <resturant:Longitude rdf:datatype="&xsd;double">-96.8008127</resturant:Longitude>
+        <resturant:Location_ID rdf:datatype="&xsd;integer">14</resturant:Location_ID>
+        <resturant:Latitude rdf:datatype="&xsd;double">32.9913554</resturant:Latitude>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location_Starbucks -->
+
+    <NamedIndividual rdf:about="&resturant;Location_Starbucks">
+        <rdf:type rdf:resource="&resturant;Location"/>
+        <resturant:Longitude rdf:datatype="&xsd;double">-96.7672314</resturant:Longitude>
+        <resturant:Latitude rdf:datatype="&xsd;double">32.9774106</resturant:Latitude>
+        <resturant:Location_ID rdf:datatype="&xsd;integer">8</resturant:Location_ID>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Location_Subway -->
+
+    <NamedIndividual rdf:about="&resturant;Location_Subway">
+        <rdf:type rdf:resource="&resturant;Location"/>
+        <resturant:Longitude rdf:datatype="&xsd;double">-96.7684906</resturant:Longitude>
+        <resturant:Location_ID rdf:datatype="&xsd;integer">2</resturant:Location_ID>
+        <resturant:Latitude rdf:datatype="&xsd;double">32.9804857</resturant:Latitude>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_01 -->
+
+    <NamedIndividual rdf:about="&resturant;Resturant_01">
+        <rdf:type rdf:resource="&resturant;Resturant"/>
+        <resturant:Resturant_Price rdf:datatype="&xsd;integer">3</resturant:Resturant_Price>
+        <resturant:Cuisine rdf:datatype="&xsd;string">Fastfood||Sandwich||Salad||Dessert||Pizza</resturant:Cuisine>
+        <resturant:Ambience rdf:datatype="&xsd;string">Music||Dine-In||Family</resturant:Ambience>
+        <resturant:Resturant_Name rdf:datatype="&xsd;string">Subway</resturant:Resturant_Name>
+        <resturant:Is_At rdf:resource="&resturant;Location_Subway"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_02 -->
+
+    <NamedIndividual rdf:about="&resturant;Resturant_02">
+        <rdf:type rdf:resource="&resturant;Resturant"/>
+        <resturant:Resturant_Price rdf:datatype="&xsd;integer">3</resturant:Resturant_Price>
+        <resturant:Cuisine rdf:datatype="&xsd;string">Fastfood||Pizza||Dessert</resturant:Cuisine>
+        <resturant:Ambience rdf:datatype="&xsd;string">Music||Family||Children||Dine-In</resturant:Ambience>
+        <resturant:Resturant_Name rdf:datatype="&xsd;string">Pizza Hut</resturant:Resturant_Name>
+        <resturant:Is_At rdf:resource="&resturant;Location_Pizzahut"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_03 -->
+
+    <NamedIndividual rdf:about="&resturant;Resturant_03">
+        <rdf:type rdf:resource="&resturant;Resturant"/>
+        <resturant:Resturant_Price rdf:datatype="&xsd;integer">2</resturant:Resturant_Price>
+        <resturant:Resturant_Name rdf:datatype="&xsd;string">CiCi&apos;s Pizza</resturant:Resturant_Name>
+        <resturant:Ambience rdf:datatype="&xsd;string">Dine-In||Family</resturant:Ambience>
+        <resturant:Cuisine rdf:datatype="&xsd;string">Fastfood||Pizza||Salad||Pasta||Non-Veg||Veg</resturant:Cuisine>
+        <resturant:Is_At rdf:resource="&resturant;Location_Cicispizza"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_04 -->
+
+    <NamedIndividual rdf:about="&resturant;Resturant_04">
+        <rdf:type rdf:resource="&resturant;Resturant"/>
+        <resturant:Resturant_Price rdf:datatype="&xsd;integer">3</resturant:Resturant_Price>
+        <resturant:Ambience rdf:datatype="&xsd;string">Bachelors||Crowded||Wi-Fi||Music</resturant:Ambience>
+        <resturant:Cuisine rdf:datatype="&xsd;string">Fastfood||Coffee||Salad||Juice||Tea</resturant:Cuisine>
+        <resturant:Resturant_Name rdf:datatype="&xsd;string">Starbucks</resturant:Resturant_Name>
+        <resturant:Is_At rdf:resource="&resturant;Location_Starbucks"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.utdallas.edu/~pdk130030/owl/resturant.owl#Resturant_05 -->
+
+    <NamedIndividual rdf:about="&resturant;Resturant_05">
+        <rdf:type rdf:resource="&resturant;Resturant"/>
+        <resturant:Resturant_Price rdf:datatype="&xsd;integer">5</resturant:Resturant_Price>
+        <resturant:Resturant_Name rdf:datatype="&xsd;string">Chillies</resturant:Resturant_Name>
+        <resturant:Ambience rdf:datatype="&xsd;string">Dine-In||Crowded||Music||Kid-Friendly</resturant:Ambience>
+        <resturant:Cuisine rdf:datatype="&xsd;string">Dine-In||Mexican||Non-veg</resturant:Cuisine>
+        <resturant:Is_At rdf:resource="&resturant;Location_Chillies"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&resturant;Food_Item"/>
+            <rdf:Description rdf:about="&resturant;Location"/>
+            <rdf:Description rdf:about="&resturant;Resturant"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
